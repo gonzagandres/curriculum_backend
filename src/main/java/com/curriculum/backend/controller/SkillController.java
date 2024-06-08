@@ -1,6 +1,5 @@
 package com.curriculum.backend.controller;
 
-import com.curriculum.backend.exception.ResourceNotFoundException;
 import com.curriculum.backend.models.Skill;
 import com.curriculum.backend.repository.SkillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +35,7 @@ public class SkillController {
             skill.setId(id);
             return repository.save(skill);
         } else {
-            throw new ResourceNotFoundException("Skill with id " + id + " not found");
+            return null;
         }
     }
 

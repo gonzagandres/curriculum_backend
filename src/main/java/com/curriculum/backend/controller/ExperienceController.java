@@ -1,6 +1,5 @@
 package com.curriculum.backend.controller;
 
-import com.curriculum.backend.exception.ResourceNotFoundException;
 import com.curriculum.backend.models.Experience;
 import com.curriculum.backend.repository.ExperienceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +36,7 @@ public class ExperienceController {
             experience.setId(id);
             return repository.save(experience);
         } else {
-            throw new ResourceNotFoundException("Experience with id " + id + " not found");
+            return null;
         }
     }
 

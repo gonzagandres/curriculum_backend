@@ -1,6 +1,5 @@
 package com.curriculum.backend.controller;
 
-import com.curriculum.backend.exception.ResourceNotFoundException;
 import com.curriculum.backend.models.GeneralInformation;
 import com.curriculum.backend.repository.GeneralInformationRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -41,7 +40,7 @@ public class GeneralInformationController {
             info.setId(id);
             return repository.save(info);
         } else {
-            throw new ResourceNotFoundException("General Information with id " + id + " not found");
+            return null;
         }
     }
 
