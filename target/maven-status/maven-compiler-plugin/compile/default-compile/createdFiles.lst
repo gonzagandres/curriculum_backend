@@ -1,0 +1,10 @@
+com\curriculum\backend\controller\ExperienceController.class
+com\curriculum\backend\CurriculumApplication.class
+com\curriculum\backend\models\Experience.class
+com\curriculum\backend\repository\SkillRepository.class
+com\curriculum\backend\repository\ExperienceRepository.class
+com\curriculum\backend\repository\GeneralInformationRepository.class
+com\curriculum\backend\controller\GeneralInformationController.class
+com\curriculum\backend\models\GeneralInformation.class
+com\curriculum\backend\controller\SkillController.class
+com\curriculum\backend\models\Skill.class
