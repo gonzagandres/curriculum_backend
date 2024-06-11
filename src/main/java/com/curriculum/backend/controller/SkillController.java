@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://master--curriculum-vitae-udea.netlify.app/")
 @RestController
 @RequestMapping("/api/skills")
 public class SkillController {
